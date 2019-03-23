@@ -24,7 +24,7 @@ The PatchCamelyon(PCam) is a new benchmark dataset for medical image classificat
  <img src="./images/pcam.png" alt="Drawing" width="50%">
 </p>
 
-The data is provided under the CCO License, Data download  [link]https://drive.google.com/drive/folders/1gHou49cA1s5vua2V5L98Lt8TiWA3FrKB). The dataset is available in HDF5 files with train, valid, test split. Each set contains the data and target file. In this work the data is preprocessed into PyTorch ImageFolder format and the structure of data folder is as follows:
+The data is provided under the CCO License, Data download  [link](https://drive.google.com/drive/folders/1gHou49cA1s5vua2V5L98Lt8TiWA3FrKB). The dataset is available in HDF5 files with train, valid, test split. Each set contains the data and target file. In this work the data is preprocessed into PyTorch ImageFolder format and the structure of data folder is as follows:
 ```bash
 ├── PCam-data
 	├── train
@@ -38,6 +38,11 @@ The data is provided under the CCO License, Data download  [link]https://drive.g
 	    ├── no-tumor
 
 ```
+
+
+## Training
+All experiments demand high computation power, I trained all the experiments using FloydHub(easy to configure, but need to spend a dollar for one hour training. It's better to use gpu after making sure the code runs properly) and Google Colab(most of the time running out of memory) GPU. For FloydHub, I used powerup package which includes TeslaK80 GPU. 
+
 ## Experiments
 
 In learning process to implement the planned Dense Siamese Network, I implemented DenseNets and Siamese Networks separated and trained them  on CIFAR-10, PCam datasets.  Please refer to experiments section in this repository to run the models. Separate documentation is provided with instructions on how to train these networks. 
@@ -53,8 +58,6 @@ Few screenshots  results from the implemented DenseNet architecture on CIFAR-10 
  <img src="./images/p4.png" alt="Drawing" width="30%">
 </p>
 
-## Training
-All experiments demand high computation power, I trained all the experiments using FloydHub(easy to configure, but need to spend a dollar for one hour training. It's better to use gpu after making sure the code runs properly) and Google Colab(most of the time running out of memory) GPU. For FloydHub, I used powerup package which includes TeslaK80 GPU. 
 
 ## To do List
 
