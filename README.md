@@ -3,7 +3,7 @@
 
 This is the PyTorch implementation of Dense Siamese Network for the detection of cancer tissues in histopathology scans. The architecture used in the work is shown in the figure below:
 <p align="center">
- <img src="./images/proposed_model.png" alt="Drawing" width="70%">
+ <img src="./images/proposed_model.png" alt="Drawing" width="50%">
 </p>
  
  The main objective of this work is to implement  an end-to-end pipeline for deep semantic learning model for detection of cancerous tissues.
@@ -39,6 +39,18 @@ The data is provided under the CCO License, Data download  [link]https://drive.g
 ## Experiments
 
 In learning process to implement the planned Dense Siamese Network, I implemented DenseNets and Siamese Networks separated and trained them  on CIFAR-10, PCam datasets.  Please refer to experiments section in this repository to run the models. Separate documentation is provided with instructions on how to train these networks. 
+
+Few screenshots  results from the implemented DenseNet architecture on CIFAR-10 dataset:
+<p align="center">
+ <img src="./images/p1.png" alt="Drawing" width="30%">
+  <img src="./images/p2.png" alt="Drawing" width="30%">
+</p>
+
+<p align="center">
+ <img src="./images/p3.png" alt="Drawing" width="30%">
+ <img src="./images/p4.png" alt="Drawing" width="30%">
+</p>
+
 ## Training
 All experiments demand high computation power, I trained all the experiments using FloydHub(easy to configure, but need to spend a dollar for one hour training. It's better to use gpu after making sure the code runs properly) and Google Colab(most of the time running out of memory) GPU. For FloydHub, I used powerup package which includes TeslaK80 GPU. 
 
