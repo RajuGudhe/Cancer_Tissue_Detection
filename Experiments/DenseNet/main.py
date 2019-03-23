@@ -1,6 +1,6 @@
 import torch
 
-from trainer import Trainer
+from train import Trainer
 from config import get_config
 from data_loader import *
 from utils import prepare_dirs, save_config
