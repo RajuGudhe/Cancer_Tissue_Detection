@@ -3,7 +3,7 @@
 
 This is the PyTorch implementation of Dense Siamese Network for the detection of cancer tissues in histopathology scans. The architecture used in the work is shown in the figure below:
 <p align="center">
- <img src="./images/proposed_model.png" alt="Drawing" width="50%">
+ <img src="./images/proposed_model.png" alt="Drawing" width="70%">
 </p>
  
  The main objective of this work is to implement  an end-to-end pipeline for deep semantic learning model for detection of cancerous tissues.
