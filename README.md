@@ -20,7 +20,9 @@ The PatchCamelyon(PCam) is a new benchmark dataset for medical image classificat
 
 
 
-![Example Annotated Images from PCam dataset](https://cdn-images-1.medium.com/max/800/1*MAAzPX-f5uejYE2e2jsXeA.png)
+<p align="center">
+ <img src="./images/pcam.png" alt="Drawing" width="70%">
+</p>
 
 The data is provided under the CCO License, Data download  [link]https://drive.google.com/drive/folders/1gHou49cA1s5vua2V5L98Lt8TiWA3FrKB). The dataset is available in HDF5 files with train, valid, test split. Each set contains the data and target file. In this work the data is preprocessed into PyTorch ImageFolder format and the structure of data folder is as follows:
 ```bash
